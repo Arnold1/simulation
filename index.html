@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="js/plane.js"></script>
+  <script type="text/javascript" src="js/radar.js"></script>
+  <script type="text/javascript" src="js/util.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-lightness/jquery-ui.css"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+
+<script type="template" id="dialog-template">
+  <label id="aircraftId">Plane Code:</label><br>
+  <label id="altitude">Altitude:</label><br>
+  <label id="speed">Speed:</label><br>
+  <label id="heading">Heading:</label><br>
+  <label id="distance">Distance:</label>
+  <form data-id="myForm1" class="myForm">
+    <label for="threatLevel">Threat level:</label>
+    <input type="text" id="threatLevel" name="q" size="5" value="1">
+  </form>
+  <form data-id="myForm2" class="myForm">
+    <label for="IFF">IFF:</label>
+    <input type="text" id="iff" name="q" size="5" value="Foe">
+  </form>
+  <form data-id="myForm3" class="myForm">
+    <label for="weapons">Weapons:</label>
+    <input type="text" id="weapons" name="q" size="5" value="1">
+  </form>
+</script>
+
+<div id="canvasesdiv" style="position:relative; left:0px; width:1280px; height:736px; background-color: #000000;">
+    <canvas id="myCanvas" style="z-index: 1; position:absolute; left:0px; top:0px;" width="1280" height="736">Sorry, your browser doesn't support Canvas element.</canvas>
+</div>
+
+</html>
